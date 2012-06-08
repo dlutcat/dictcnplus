@@ -1,0 +1,26 @@
+{
+   "name": "Dictcnplus",
+   "version": "1.0",
+   "description": "fixed: 不能添加生词本。海词（Dict.cn）划词翻译 Dict.cn Extension for Chrome",
+   "options_page": "options.html",
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "disable.png",
+      "default_title": "Enable Dict.cn"
+   },
+   "content_scripts": [ {
+      "js": [ "init.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "permissions": [
+    "tabs",
+	"http://*/"
+   ],
+   "icons": { 
+		"16": "icon16.png",
+		"32": "icon32.png",
+		"48": "icon48.png",
+		"64": "icon48.png",
+		"128": "icon128.png" }
+}
